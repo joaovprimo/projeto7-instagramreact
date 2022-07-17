@@ -9,3 +9,4 @@ export default function App() {
         </div>
     );
 }
+//faltando fazer o fundo e os cliques
