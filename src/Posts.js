@@ -1,3 +1,4 @@
+import React from 'react';
 
 let ListPost=[{
     img1:"img/meowed.svg", 
@@ -27,6 +28,8 @@ return(
 }
 
 function Post(props){
+  const [corButton, setCorButton] = React.useState("");
+  const [typeButton, setTypeButton] = React.useState("heart-outline");
 return (
     <div class="post">
               <div class="topo">
@@ -40,13 +43,23 @@ return (
               </div>
 
               <div class="conteudo">
-                <img src={props.img2} alt=""/>
+                <img src={props.img2} onDoubleClick = {()=> {  if(typeButton==="heart-outline"){
+                       setCorButton("md hydrated liked");
+                       setTypeButton("heart"); }else{
+                        setCorButton("md hydrated");
+                        setTypeButton("heart-outline");}}} alt=""/>
               </div>
 
               <div class="fundo">
                 <div class="acoes">
                   <div>
-                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon class={corButton} name={typeButton}
+                    onClick = {()=> {  if(typeButton==="heart-outline"){
+                       setCorButton("md hydrated liked");
+                       setTypeButton("heart"); }else{
+                        setCorButton("md hydrated");
+                        setTypeButton("heart-outline");
+                       }}}></ion-icon>
                     <ion-icon name="chatbubble-outline"></ion-icon>
                     <ion-icon name="paper-plane-outline"></ion-icon>
                   </div>

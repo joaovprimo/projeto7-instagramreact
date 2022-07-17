@@ -12,7 +12,7 @@ function BoxStories(props){
 }
 
 export default function Stories(){
-const ListStories = [{img:"9gag.svg", title :"9gag"}, {img:"img/meowed.svg", title :"meowed"}, {img:"img/barked.svg", title :"barked"}, {img:"img/nathanwpylestrangeplanet.svg", title :"nathanwpylestrangeplanet"}
+const ListStories = [{img:"img/9gag.svg", title :"9gag"}, {img:"img/meowed.svg", title :"meowed"}, {img:"img/barked.svg", title :"barked"}, {img:"img/nathanwpylestrangeplanet.svg", title :"nathanwpylestrangeplanet"}
 , {img:"img/wawawicomics.svg", title :"wawawicomics"}, {img:"img/respondeai.svg", title :"respondeai"}, {img:"img/filomoderna.svg", title :"filomodena"},
 {img:"img/memeriagourmet.svg", title :"memeriagourmet"}];
 
